@@ -9,6 +9,7 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "lgpio>=0.2.2.0",
+    "smbus2>=0.6.1",
 ]
 
 [tool.uv]
