@@ -1,17 +1,15 @@
 [project]
 name = "v-macs-dot-scripts"
 version = "0.1.0"
-description = "Add your description here"
+description = "Hardware module test scripts for V-MACS dots (RP2350-POE-ETH), run on a Raspberry Pi"
 readme = "README.md"
 authors = [
     { name = "Albert Sodel", email = "sodelalbert@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "lgpio>=0.2.2.0",
+]
 
-[project.scripts]
-v-macs-dot-scripts = "v_macs_dot_scripts:main"
-
-[build-system]
-requires = ["uv_build>=0.13.6,<0.14.0"]
-build-backend = "uv_build"
+[tool.uv]
+package = false
