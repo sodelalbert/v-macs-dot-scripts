@@ -67,6 +67,8 @@ def print_relays():
 
 
 if __name__ == "__main__":
+    time.sleep(10)
+
     set_all(False)
     print_relays()
 
@@ -74,7 +76,7 @@ if __name__ == "__main__":
         try:
             set_relay(n, True)
             print_relays()
-            time.sleep(0.03)
+            time.sleep(0.1)
         finally:
             set_relay(n, False)
     print_relays()
