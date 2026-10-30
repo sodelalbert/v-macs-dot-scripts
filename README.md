@@ -15,3 +15,15 @@ curl -LsSf https://astral.sh/uv/install.sh | sh   # once
 uv sync                                           # create .venv with dependencies
 uv run ir-rx/df_robot_dfr0094.py live              # run a script
 ```
+
+
+## Integrations
+
+- [x] IR RX 
+- [ ] IR TX (nof working with rotenso AC)
+- [x] Temperature and Humidity sensor
+- [ ] LIN
+- [ ] CAN
+- [ ] RF 868
+- [ ] RF 433  
+- [ ] RF 2.4 GHz   
